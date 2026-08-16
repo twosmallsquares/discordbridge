@@ -1,5 +1,6 @@
 package discordbridge;
 
+import arc.files.Fi;
 import arc.Events;
 import arc.util.Log;
 import arc.util.Timer;
@@ -116,7 +117,7 @@ public class DiscordBridgePlugin extends Plugin {
                 Log.info("[DiscordBridge] Wrote default config to " + configFile.getAbsolutePath()
                     + " - fill in your bot token and channel IDs, then restart.");
             } else {
-                config = json.fromJson(Config.class, configFile);
+                config = json.fromJson(Config.class, new Fi(configFile));
             }
         } catch (Exception e) {
             Log.err("[DiscordBridge] Failed to load config, using in-memory defaults", e);
