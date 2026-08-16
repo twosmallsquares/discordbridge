@@ -1,0 +1,8 @@
+{
+  "name": "discord-bridge",
+  "displayName": "Discord Bridge",
+  "author": "you",
+  "description": "Relays in-game chat, console output, and player list to Discord, like DiscordSRV.",
+  "version": "1.0",
+  "main": "discordbridge.DiscordBridgePlugin"
+}
